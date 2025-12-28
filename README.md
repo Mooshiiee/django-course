@@ -16,19 +16,25 @@ creating a project
 
 
 # 2
-create a public repo and track work through Github
-
 explain django apps vs. projects
 
 `py manage.py startapp books`
 
 create rudimentary view and url conf.
 
-add app to the `settings.py`
-
 explain SQL
 
 explain Django ORM
+
+# 3 
+explain the settings.py file
+- make sure sqlite is the database, mention postgres for more scalable option
+- set time zone
+- explain the default apps within the `INSTALLED_APPS` list
+
+add app to the `settings.py`
+
+create a public repo and track work through Github
 
 create models
 
@@ -49,8 +55,7 @@ now we can migrate
 
 `py .\manage.py migrate (books)`
 
-lets populate the tables in the admin, hmm the tables dont show up, we need to specify what tables
-have admin access
+lets populate the tables in the admin, hmm the tables dont show up, we need to specify what tables have admin access
 
 Now lets add to admin:
  - create superuser: `py manage.py createsuperuser`
